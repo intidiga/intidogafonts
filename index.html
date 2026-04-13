@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>5 款私藏字體分享</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #FAF6F0;
+    --text: #2A2A2A;
+    --accent: #E8692A;
+    --card-bg: #FFFFFF;
+    --tag-free: #2D8B4E;
+    --tag-personal: #B8860B;
+    --border: #E8E2D8;
+    --subtle: #8A8478;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Noto Sans TC', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .container {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 48px 24px 64px;
+  }
+
+  /* Header */
+  header {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  header .ig-cta {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--accent);
+    border: 1.5px solid var(--accent);
+    border-radius: 20px;
+    padding: 6px 18px;
+    margin-bottom: 20px;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+
+  header .ig-cta:hover {
+    background: var(--accent);
+    color: #fff;
+  }
+
+  header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+
+  header h1 span {
+    color: var(--accent);
+  }
+
+  header p {
+    font-size: 14px;
+    color: var(--subtle);
+    line-height: 1.6;
+  }
+
+  /* Font Cards */
+  .font-card {
+    background: var(--card-bg);
+    border-radius: 16px;
+    padding: 28px 24px;
+    margin-bottom: 20px;
+    border: 1px solid var(--border);
+    transition: transform 0.2s ease;
+  }
+
+  .font-card:hover {
+    transform: translateY(-2px);
+  }
+
+  .font-card-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 12px;
+  }
+
+  .font-number {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: 0.08em;
+    min-width: 24px;
+  }
+
+  .font-tag {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 20px;
+    letter-spacing: 0.04em;
+  }
+
+  .tag-free {
+    background: #E8F5E9;
+    color: var(--tag-free);
+  }
+
+  .tag-personal {
+    background: #FFF8E1;
+    color: var(--tag-personal);
+  }
+
+  .font-name {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    letter-spacing: -0.01em;
+  }
+
+  .font-name-sub {
+    font-size: 13px;
+    color: var(--subtle);
+    margin-bottom: 14px;
+  }
+
+  .font-preview {
+    padding: 16px 0;
+    text-align: center;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 16px;
+  }
+
+  .font-preview img {
+    height: 100px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+
+  .font-desc {
+    font-size: 13px;
+    color: var(--subtle);
+    margin-bottom: 16px;
+    line-height: 1.7;
+  }
+
+  .font-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--accent);
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 1.5px solid var(--accent);
+    border-radius: 10px;
+    transition: all 0.2s ease;
+  }
+
+  .font-link:hover {
+    background: var(--accent);
+    color: #fff;
+  }
+
+  .font-link svg {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+  }
+
+  .font-links-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  /* Divider */
+  .section-divider {
+    text-align: center;
+    margin: 40px 0 32px;
+    font-size: 12px;
+    color: var(--subtle);
+    letter-spacing: 0.1em;
+  }
+
+  .section-divider::before,
+  .section-divider::after {
+    content: '—';
+    margin: 0 8px;
+    opacity: 0.4;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    margin-top: 48px;
+    padding-top: 32px;
+    border-top: 1px solid var(--border);
+  }
+
+  footer p {
+    font-size: 12px;
+    color: var(--subtle);
+    line-height: 1.8;
+  }
+
+  footer .note {
+    font-size: 11px;
+    color: #B0A89C;
+    margin-top: 16px;
+    line-height: 1.7;
+  }
+
+  /* Responsive */
+  @media (max-width: 380px) {
+    .container { padding: 32px 16px 48px; }
+    .font-name { font-size: 19px; }
+    .font-preview { font-size: 28px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <a class="ig-cta" href="https://www.instagram.com/intidoga.st" target="_blank" rel="noopener">追蹤我的 IG 看更多分享 →</a>
+    <h1>我的 <span>5</span> 款私藏字體</h1>
+    <p>以下是影片中分享的五個字體<br>點擊連結可前往官方頁面自行下載</p>
+  </header>
+
+  <!-- 1. BLOSTA -->
+  <div class="font-card">
+    <div class="font-card-header">
+      <span class="font-number">01</span>
+      <span class="font-tag tag-personal">個人免費 · 商用需授權</span>
+    </div>
+    <div class="font-name">BLOSTA</div>
+    <div class="font-name-sub">Alcode 設計 · Serif + Script 組合</div>
+    <div class="font-preview"><img src="font-blosta.png" alt="BLOSTA 字體預覽"></div>
+    <div class="font-desc">優雅的襯線＋手寫體搭配，適合用於婚禮、品牌識別、卡片等需要高級感的設計。個人使用免費，商用需另外購買授權。</div>
+    <div class="font-links-row">
+      <a class="font-link" href="https://www.myfonts.com/collections/blosta-font-alcode" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        MyFonts（商用）
+      </a>
+    </div>
+  </div>
+
+  <!-- 2. Rough Villain -->
+  <div class="font-card">
+    <div class="font-card-header">
+      <span class="font-number">02</span>
+      <span class="font-tag tag-personal">個人免費 · 商用需授權</span>
+    </div>
+    <div class="font-name">Rough Villain</div>
+    <div class="font-name-sub">Letterhend Studio 設計 · 復古粗體</div>
+    <div class="font-preview"><img src="font-rough-villain.png" alt="Rough Villain 字體預覽"></div>
+    <div class="font-desc">大膽復古風格的展示字體，適合童書、標題、Logo、海報等需要搶眼效果的場景。個人使用免費，商用需購買授權。</div>
+    <div class="font-links-row">
+      <a class="font-link" href="https://www.dafont.com/rough-villain.font" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        DaFont
+      </a>
+      <a class="font-link" href="https://www.letterhend.com/product/rough-villain-display-font/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        官方（商用）
+      </a>
+    </div>
+  </div>
+
+  <!-- 3. Taipei Sans TC Beta -->
+  <div class="font-card">
+    <div class="font-card-header">
+      <span class="font-number">03</span>
+      <span class="font-tag tag-free">免費商用 · 開源授權</span>
+    </div>
+    <div class="font-name">台北黑體</div>
+    <div class="font-name-sub">Taipei Sans TC Beta · 翰字鑄造</div>
+    <div class="font-preview"><img src="font-taipei-sans.png" alt="台北黑體字體預覽"></div>
+    <div class="font-desc">以思源黑體為基礎改作，更適合繁體中文的印刷與設計排版。SIL 開源授權，個人與商用皆免費。支援繁體、簡體、日文漢字。</div>
+    <div class="font-links-row">
+      <a class="font-link" href="https://sites.google.com/view/jtfoundry/en/downloads" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        翰字鑄造官網
+      </a>
+    </div>
+  </div>
+
+  <!-- 4. Zen Antique -->
+  <div class="font-card">
+    <div class="font-card-header">
+      <span class="font-number">04</span>
+      <span class="font-tag tag-free">免費商用 · 開源授權</span>
+    </div>
+    <div class="font-name">Zen Antique</div>
+    <div class="font-name-sub">Google Fonts · 日文古風明朝體</div>
+    <div class="font-preview"><img src="font-zen-antique.png" alt="Zen Antique 字體預覽"></div>
+    <div class="font-desc">帶有古典韻味的日文明朝體，平假名較細、片假名與漢字較粗，營造出獨特的節奏感。Google Fonts 開源字體，免費商用。</div>
+    <div class="font-links-row">
+      <a class="font-link" href="https://fonts.google.com/specimen/Zen+Antique" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        Google Fonts
+      </a>
+    </div>
+  </div>
+
+  <!-- 5. 獅尾四季春加糖 -->
+  <div class="font-card">
+    <div class="font-card-header">
+      <span class="font-number">05</span>
+      <span class="font-tag tag-free">免費商用 · 開源授權</span>
+    </div>
+    <div class="font-name">獅尾四季春加糖</div>
+    <div class="font-name-sub">Swei Spring Sugar · max32002</div>
+    <div class="font-preview"><img src="font-swei-spring.png" alt="獅尾四季春加糖字體預覽"></div>
+    <div class="font-desc">以思源宋體為基礎，加粗橫筆改造而成的開源字體，符合台灣教育部標準字形。SIL 開源授權，個人與商用皆免費。共有 7 種字重可選。</div>
+    <div class="font-links-row">
+      <a class="font-link" href="https://github.com/max32002/swei-spring" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        GitHub
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    <p>以上字體請依各自授權規範使用<br>點擊連結前往官方頁面下載最安心</p>
+    <p class="note">標示「個人免費」的字體僅限非商業用途<br>如需商用請至官方購買授權</p>
+  </footer>
+</div>
+
+</body>
+</html>
